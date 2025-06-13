@@ -6,19 +6,7 @@ settings:
 
 importers:
 
-  .:
-    devDependencies:
-      prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
-      turbo:
-        specifier: ^2.5.0
-        version: 2.5.0
-      typescript:
-        specifier: 5.8.2
-        version: 5.8.2
-
-  apps/docs:
+  typescript/apps/docs:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
@@ -55,7 +43,7 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
 
-  apps/web:
+  typescript/apps/web:
     dependencies:
       next:
         specifier: ^15.3.0
@@ -89,9 +77,9 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
 
-  not-in-pnpm-workspace: {}
+  typescript/not-in-pnpm-workspace: {}
 
-  packages/eslint-config:
+  typescript/packages/eslint-config:
     devDependencies:
       '@eslint/js':
         specifier: ^9.24.0
@@ -127,9 +115,9 @@ importers:
         specifier: ^8.29.0
         version: 8.29.0(eslint@9.24.0)(typescript@5.8.2)
 
-  packages/typescript-config: {}
+  typescript/packages/typescript-config: {}
 
-  packages/ui:
+  typescript/packages/ui:
     dependencies:
       react:
         specifier: ^19.1.0
@@ -1623,11 +1611,6 @@ packages:
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
-    engines: {node: '>=14'}
-    hasBin: true
 
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -3804,8 +3787,6 @@ snapshots:
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
-
-  prettier@3.5.3: {}
 
   prop-types@15.8.1:
     dependencies:

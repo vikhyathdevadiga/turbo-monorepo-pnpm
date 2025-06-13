@@ -1,0 +1,5 @@
+packages:
+  - typescript/apps/*
+  - typescript/services/*
+  - typescript/packages/*
+  - typescript/not-in-pnpm-workspace
